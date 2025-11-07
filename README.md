@@ -41,15 +41,23 @@ To run this portfolio locally:
 
 The site will be available at `http://localhost:4000`
 
-## 🏗️ Building for Production
+## 🏗️ Deployment
 
-To create a production build:
+This portfolio is set up for automatic deployment to GitHub Pages. Here's how it works:
 
+### Automatic Deployment
+The site automatically deploys to GitHub Pages when you push to the `main` branch. The deployment:
+1. Builds the project using Parcel
+2. Creates a `gh-pages` branch
+3. Deploys the built files to GitHub Pages
+
+### Manual Building
+To build the project locally:
 ```bash
 npm run build
 ```
 
-The built files will be in the `dist` directory.
+The built files will be generated in the root directory.
 
 ## 📁 Project Structure
 
