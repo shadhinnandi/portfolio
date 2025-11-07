@@ -6,9 +6,9 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel --port 4000",
-    "build": "parcel build --dist-dir dist --public-url /portfolio/",
-    "build:watch": "parcel build --watch --dist-dir dist --public-url /portfolio/",
-    "serve:dist": "browser-sync start --server dist --files dist/**/* --port 5500 --open"
+    "build": "parcel build --dist-dir . --public-url /portfolio/",
+    "build:watch": "parcel build --watch --dist-dir . --public-url /portfolio/",
+    "serve:dist": "browser-sync start --server . --files **/* --port 5500 --open"
   },
   "repository": {
     "type": "git",
