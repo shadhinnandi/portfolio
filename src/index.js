@@ -18,3 +18,20 @@ if (progressEl) {
   window.addEventListener("resize", updateProgress);
   updateProgress();
 }
+
+// Navigation active state handling
+const navLinks = document.querySelectorAll(".site-nav__link");
+if (navLinks.length) {
+  const setActiveLink = (activeLink) => {
+    navLinks.forEach((link) => link.classList.remove("is-active"));
+    activeLink.classList.add("is-active");
+  };
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      setActiveLink(link);
+    });
+  });
+
+  setActiveLink(navLinks[0]);
+}

@@ -33,6 +33,20 @@
     <div id="scroll-progress"></div>
     <div id="top"></div>
 
+    <header class="site-header" role="banner">
+      <div class="site-header__inner container">
+        <div class="site-header__spacer" aria-hidden="true"></div>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a class="site-nav__link" href="#hero"><span>Home</span></a>
+          <a class="site-nav__link" href="#about"><span>About</span></a>
+          <a class="site-nav__link" href="#academics"><span>Academics</span></a>
+          <a class="site-nav__link" href="#skills-achievements"><span>Skills</span></a>
+          <a class="site-nav__link" href="#projects"><span>Projects</span></a>
+          <a class="site-nav__link" href="#contact"><span>Contact</span></a>
+        </nav>
+      </div>
+    </header>
+
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
@@ -51,7 +65,7 @@
     <!-- /END Hero Section -->
 
     <!-- **** About Section **** -->
-    <section id="about">
+    <section id="about" class="fullpage-section">
       <div class="container">
         <h2 class="section-title load-hidden">About me</h2>
         <div class="row about-wrapper">
@@ -93,7 +107,7 @@
     <!-- /END About Section -->
 
     <!-- **** Academics (Education + Interests) **** -->
-    <section id="academics">
+    <section id="academics" class="fullpage-section">
       <div class="container">
         <h2 class="section-title dark-blue-text">Academics</h2>
         <div class="row">
@@ -114,7 +128,7 @@
           <div class="col-lg-6 col-sm-12 interests-content info-card load-hidden">
             <h3>Academic Interests</h3>
             <ul>
-              <h4>Machine Learning and Automation for intelligent systems</h4>
+              <li>Machine Learning and Automation for intelligent systems</li>
               <li>Robotics and Internet of Things (IoT) integration</li>
               <li>Human-Computer Interaction (HCI) and UI/UX design</li>
               <li>Research and Development in emerging technologies</li>
@@ -127,7 +141,7 @@
     </section>
 
     <!-- **** Skills + Leadership & Achievements **** -->
-    <section id="skills-achievements">
+    <section id="skills-achievements" class="fullpage-section">
       <div class="container">
         <h2 class="section-title dark-blue-text">Skills &amp; Achievements</h2>
         <div class="row">
@@ -167,7 +181,7 @@
           <h2 class="section-title dark-blue-text">Projects</h2>
 
           <!-- Notice: each .row is a project -->
-          <div class="row">
+          <div class="row project-page">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title"> UIU Grading Calculator</h3>
@@ -217,7 +231,7 @@
           <!-- /END Project -->
 
           <!-- Notice: each .row is a project -->
-          <div class="row">
+          <div class="row project-page">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Farmers Market</h3>
@@ -267,7 +281,7 @@
           <!-- /END Project -->
 
           <!-- Notice: each .row is a project -->
-          <div class="row">
+          <div class="row project-page">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Durjog Prohori</h3>
@@ -334,6 +348,8 @@
               > Gmail </a
             >
           </div>
+        </div>
+      </div>
     </section>
     <!-- /END Contact Section -->
 

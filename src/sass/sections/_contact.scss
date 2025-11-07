@@ -4,27 +4,45 @@
     $primary-color 0%,
     $secondary-color 100%
   );
-  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-  padding: 15rem 0 10rem 0;
-  margin-top: -10rem;
-  margin-bottom: -1px;
+  -webkit-clip-path: none;
+  clip-path: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8rem 0;
+  margin-top: 0;
+  min-height: 100vh;
+  margin-bottom: 0;
   color: $white-color;
 
+  > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
   @include respond(tab-land) {
-    padding: 10rem 0;
-    clip-path: none;
-    margin-top: 0;
-    -webkit-clip-path: none;
+    padding: 8rem 0;
   }
 
   .contact-wrapper {
-    margin-top: 3.2rem;
+    margin-top: 0;
     padding: 0 2rem;
     backface-visibility: hidden;
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; /* center heading and button */
+  
 
     &__text {
-      margin-bottom: 2.5rem;
+      margin-bottom: 1.2rem;
     }
 
     &__text,
@@ -34,6 +52,23 @@
       @include respond(phone) {
         font-size: 2rem;
       }
+    }
+
+    .cta-group {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .cta-btn {
+        margin: 0 auto; /* ensure button is centered */
+      }
+    }
+
+    /* Make the section title centered within contact */
+    .section-title {
+      text-align: center;
+      margin-bottom: 0.8rem;
     }
   }
 }

@@ -8,3 +8,30 @@ section {
     padding-right: 1rem;
   }
 }
+
+.fullpage-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8rem 0;
+  background-color: $white-color;
+
+  > .container {
+    width: 100%;
+  }
+}
+
+#academics > .container,
+#skills-achievements > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+#academics .row,
+#skills-achievements .row {
+  width: 100%;
+}
