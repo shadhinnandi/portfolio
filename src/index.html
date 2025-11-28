@@ -26,7 +26,6 @@
 
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <script type="module" src="scripts/navigation.js"></script>
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
@@ -34,15 +33,31 @@
     <div id="scroll-progress"></div>
     <div id="top"></div>
 
-    <!-- Navigation Menu -->
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#academics">Academics</a></li>
-        <li><a href="#skills">Skills & Achievements</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="dock-nav" aria-label="Primary navigation">
+      <a class="dock-nav__link" href="#hero" aria-label="Home">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <span class="sr-only">Home</span>
+      </a>
+      <a class="dock-nav__link" href="#about" aria-label="About">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <span class="sr-only">About</span>
+      </a>
+      <a class="dock-nav__link" href="#academics" aria-label="Academics">
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+        <span class="sr-only">Academics</span>
+      </a>
+      <a class="dock-nav__link" href="#skills-achievements" aria-label="Skills and Achievements">
+        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+        <span class="sr-only">Skills &amp; Achievements</span>
+      </a>
+      <a class="dock-nav__link" href="#projects" aria-label="Projects">
+        <i class="fa fa-code" aria-hidden="true"></i>
+        <span class="sr-only">Projects</span>
+      </a>
+      <a class="dock-nav__link" href="#contact" aria-label="Contact">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <span class="sr-only">Contact</span>
+      </a>
     </nav>
 
     <!-- **** Hero Section **** -->
@@ -111,17 +126,17 @@
         <div class="row">
           <div class="col-lg-6 col-sm-12 education-content info-card load-hidden">
             <h3>Education</h3>
-            <h4>B.Sc. in Computer Science &amp; Engineering - Ongoing </h4>
+            <h4>B.Sc. in Computer Science &amp; Engineering </h4>
             <p><strong>United International University, Dhaka, Bangladesh</strong></p>
-            <p>CGPA: 3.91/4.00 (92 Cr)</p>
+            <p>CGPA: Onging (92 Cr completed)</p>
             <hr />
             <h4>Higher Secondary Certificate (2021)</h4>
             <p><strong>Mirpur High School &amp; College, Dhaka, Bangladesh</strong></p>
-            <p>GPA: 4.83 (Dhaka Board)</p>
+            <p>GPA: 4.83 (Dhaka Board - 2021)</p>
             <hr />
             <h4>Secondary School Certificate (2019)</h4>
             <p><strong>Banophool Adibashi Green Heart College, Dhaka, Bangladesh</strong></p>
-            <p>GPA: 4.28 (Dhaka Board)</p>
+            <p>GPA: 4.28 (Dhaka Board - 2019)</p>
           </div>
           <div class="col-lg-6 col-sm-12 interests-content info-card load-hidden">
             <h3>Academic Interests</h3>
